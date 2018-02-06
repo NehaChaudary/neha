@@ -1,0 +1,17 @@
+<p>
+  registration works!
+</p>
+
+
+<form (ngSubmit)="signUpWithEmailAndPassword(user.email,user.password)" #myForm="ngForm">
+  <mat-form-field >
+    <input matInput placeholder="Email Id "  [(ngModel)] ="user.email" name="use1r" required email #emailid="ngModel">
+  </mat-form-field>
+
+  <mat-form-field >
+    <!--<textarea matInput placeholder="Password" [(ngModel)] ="user.password" name="comment"></textarea>-->
+    <input matInput placeholder="pass"  [(ngModel)] ="user.password" name="password1" required #password="ngModel">
+  </mat-form-field>
+<!--  <button  mat-raised-button type="submit">Submit</button>-->
+<button  mat-raised-button type="submit">Submit</button>
+</form>
